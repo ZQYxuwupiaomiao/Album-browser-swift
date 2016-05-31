@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShowPicCollectionViewCell" customModule="ZQYPhotos_Browser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kAG-FM-6uX">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uncheck_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="XIw-dt-oHC">
+                        <rect key="frame" x="80" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="56e-f5-yjT"/>
+                            <constraint firstAttribute="width" constant="20" id="WkF-Qo-alZ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bd-Ga-uqZ">
+                        <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="9oz-12-Ez8"/>
+                            <constraint firstAttribute="height" constant="40" id="vus-5U-CHu"/>
+                        </constraints>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="XIw-dt-oHC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="44q-hY-0Zn"/>
+                <constraint firstItem="0bd-Ga-uqZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6l0-cV-z19"/>
+                <constraint firstAttribute="bottom" secondItem="kAG-FM-6uX" secondAttribute="bottom" id="AH7-oz-HDA"/>
+                <constraint firstAttribute="trailing" secondItem="kAG-FM-6uX" secondAttribute="trailing" id="OFz-CV-PSC"/>
+                <constraint firstItem="kAG-FM-6uX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="T68-wW-hwu"/>
+                <constraint firstAttribute="trailing" secondItem="0bd-Ga-uqZ" secondAttribute="trailing" id="lxD-Iw-Se6"/>
+                <constraint firstItem="kAG-FM-6uX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uSx-kG-d9R"/>
+                <constraint firstAttribute="trailing" secondItem="XIw-dt-oHC" secondAttribute="trailing" id="yV9-Ko-A4u"/>
+            </constraints>
+            <size key="customSize" width="100" height="100"/>
+            <connections>
+                <outlet property="picImageView" destination="kAG-FM-6uX" id="fVS-DM-XO5"/>
+                <outlet property="selectedButton" destination="0bd-Ga-uqZ" id="Ckq-dj-LKE"/>
+                <outlet property="selectedImage" destination="XIw-dt-oHC" id="0oQ-Vv-2oh"/>
+            </connections>
+            <point key="canvasLocation" x="130" y="165"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="uncheck_icon.png" width="20" height="20"/>
+    </resources>
+</document>
